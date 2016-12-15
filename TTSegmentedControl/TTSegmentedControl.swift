@@ -602,7 +602,7 @@ extension TTSegmentedControl {
 
 extension TTSegmentedControl {
     
-    var currentIndex: Int {
+    public var currentIndex: Int {
         let label = labelForPoint(thumbContainerView.center)
         let index = allItemLabels.index(of: label)!
         return index
