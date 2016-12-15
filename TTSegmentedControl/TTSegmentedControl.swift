@@ -438,7 +438,7 @@ extension TTSegmentedControl {
 extension TTSegmentedControl {
     
     public func trackLocation(location: CGPoint){
-        self.changeThumbFrameForPoint(location,animate:false)
+        self.changeThumbFrameForPoint(location,animated:false)
     }
     
     fileprivate func configureViewBounds() {
