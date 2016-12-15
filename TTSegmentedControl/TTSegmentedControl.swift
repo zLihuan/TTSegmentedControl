@@ -437,6 +437,10 @@ extension TTSegmentedControl {
 
 extension TTSegmentedControl {
     
+    public func trackLocation(location: CGPoint){
+        self.changeThumbFrameForPoint(location,animate:false)
+    }
+    
     fileprivate func configureViewBounds() {
         let unselectedHeight = attributedDefaultTitles.map({$0.stringSize().height}).sorted(by: {$0 < $1}).last!
         let selectedHeight = attributedSelectedTitles.map({$0.stringSize().height}).sorted(by: {$0 < $1}).last!
